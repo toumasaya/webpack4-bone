@@ -6,7 +6,6 @@ const cssnano = require('cssnano')
 const webpack = require('webpack')
 const GitRevisionPlugin = require('git-revision-webpack-plugin')
 const UglifyWebpackPlugin = require('uglifyjs-webpack-plugin')
-// const CleanWebpackPlugin = require('clean-webpack-plugin')
 
 /**
  * Server
@@ -158,10 +157,6 @@ exports.loadJavaScript = ({ include, exclude } = {}) => ({
 /**
  * Building
  */
-// exports.clean = path => ({
-//   plugins: [new CleanWebpackPlugin([path])],
-// })
-
 exports.attachRevision = () => ({
   plugins: [
     new webpack.BannerPlugin({

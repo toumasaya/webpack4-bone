@@ -45,10 +45,9 @@ const productionConfig = merge([
     output: {
       chunkFilename: 'js/[name].[chunkhash:8].js',
       filename: 'js/[name].[chunkhash:8].js',
-      // publicPath: '/mook-blog/',
+      // publicPath: '/github-repo-name/',
     },
   },
-  // parts.clean(PATHS.build),
   parts.minifyJavaScript(),
   parts.minifyCSS({
     options: {
