@@ -45,7 +45,9 @@ const productionConfig = merge([
     output: {
       chunkFilename: 'js/[name].[chunkhash:8].js',
       filename: 'js/[name].[chunkhash:8].js',
-      // publicPath: '/github-repo-name/',
+      // this is for demo purpose
+      // publicPath should be commented when in production
+      publicPath: '/webpack4-bone/',
     },
   },
   parts.minifyJavaScript(),
